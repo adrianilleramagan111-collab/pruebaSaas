@@ -1,0 +1,13 @@
+{
+  "name": "Facturia",
+  "image": "mcr.microsoft.com/devcontainers/javascript-node:22",
+  "forwardPorts": [3000],
+  "portsAttributes": {
+    "3000": {
+      "label": "Facturia",
+      "onAutoForward": "openBrowser"
+    }
+  },
+  "postCreateCommand": "npm install && npm run build",
+  "postStartCommand": "npm start"
+}
